@@ -1,82 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lar Dos Pets</title>
-    <link rel="stylesheet" href="CSS/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lar dos Pets — Adoção responsável de animais</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- CABEÇALHO-->
-    <header>
-        <section class="cabecalho">
-            <div class="logo">
-            <img src="img/LogoLarDosPets.png" alt="ONG Lar dos Pets" width="250" height="150">
-            </div>
-            <ul class="ul">
-                <li><a href="#introducao">História</a></li>
-                <li><a href="#bichinhos">Animais</a></li>
-                <li><a href="#como-adotar">Como adotar</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="doar.html">Doações</a></li>
-            </ul>
-        </section>
-    </header>
+<!--CABEÇALHO-->
+<header>
+  <div class="navegacao-interna">
+  <a href="#" class="logotipo">
+    <span class="icone-logotipo"><img src="" alt=""></span>
+      Lar dos Pets
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#missao">Sobre</a></li>
+        <li><a href="#processo">Como funciona</a></li>
+        <li><a href="#animais">Animais</a></li>
+        <li><a href="#ajudar">Como ajudar</a></li>
+      </ul>
+    </nav>
+    <div class="acoes-cabecalho">
+      <a href="#ajudar" class="botao botao-contorno">Doar</a>
+      <a href="#animais" class="botao botao-principal">Quero adotar</a>
+    </div>
+  </div>
+</header>
 
+<main>
 
-        <h1>Nossa História</h1>
+  <!-- CADA FOCINHO MERECE UM LAR -->
+  <section class="destaque">
+    <div class="container">
+      <div class="grade-destaque">
+        <div>
+          <h1>Cada focinho<br>merece um lar.</h1>
+          <p class="introducao">A Lar dos Pets resgata, cuida e encontra famílias definitivas para cães e gatos em situação de abandono. Adoção responsável, com acompanhamento de perto — do primeiro encontro ao resto da vida.</p>
+          <div class="acoes-destaque">
+            <a href="#animais" class="botao botao-principal">Conhecer os animais</a>
+            <a href="#processo" class="botao botao-contorno">Como funciona a adoção</a>
+          </div>
+          <div class="estatisticas-destaque">
+            <div><strong>640+</strong><span>adoções concluídas</span></div>
+            <div><strong>38</strong><span>lares de acolhimento ativos</span></div>
+            <div><strong>9 anos</strong><span>de trabalho contínuo</span></div>
+          </div>
+        </div>
+        <div class="arte-destaque">
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="introducao">
-        <nav>
-        <p>A ONG Lar dos Pets atua no resgate e cuidado de animais em situação de abandono, maus-tratos e
-            emergência.
+  <!-- ---------- MISSÃO ---------- -->
+  <section id="missao">
+    <div class="container missao-conteudo">
+      <div class="icone-missao">🏠</div>
+      <div>
+        <h2>Não é só encontrar um dono.<br>É construir uma família.</h2>
+        <p>Trabalhamos com uma rede de lares de acolhimento e voluntários para garantir que cada animal chegue à adoção saudável, vacinado e castrado — e que cada adotante receba orientação real antes e depois da adoção.</p>
+        <ul class="pontos-missao">
+          <li>Todos os animais são vacinados, vermifugados e castrados antes da adoção.</li>
+          <li>Entrevista e visita prévia para garantir compatibilidade com a rotina da família.</li>
+          <li>Acompanhamento pós-adoção nos primeiros 60 dias, com suporte de comportamento.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-            Hoje, oferecemos abrigo, alimentação e atendimento veterinário, contando com o apoio da comunidade
-            para manter esse trabalho e transformar histórias de sofrimento em novas oportunidades.</p>
-        </nav>
-    </section>
+  <!-- ---------- PROCESSO ---------- -->
+  <section id="processo" class="processo">
+    <div class="container">
+      <h2>Como funciona a adoção</h2>
+      <p>Um processo simples, pensado para o bem-estar do animal e a segurança da nova família.</p>
+      <div class="etapas">
+        <div class="etapa">
+          <span class="numero">Passo 1</span>
+          <h3>Conheça os animais</h3>
+          <p>Veja o perfil de cada cão ou gato disponível, com temperamento, porte e cuidados especiais.</p>
+        </div>
+        <div class="etapa">
+          <span class="numero">Passo 2</span>
+          <h3>Converse e visite</h3>
+          <p>Preencha o formulário de interesse e agende uma visita presencial no abrigo ou no lar de acolhimento.</p>
+        </div>
+        <div class="etapa">
+          <span class="numero">Passo 3</span>
+          <h3>Leve para casa</h3>
+          <p>Assinado o termo de adoção responsável, o animal vai para casa com kit de boas-vindas e suporte contínuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <nav>
-            <h2>Como funciona a adoção</h2>
-            <ol>
-                <li>Escolha seu novo companheiro conheça os animais disponíveis e encontre aquele que combina com
-                    você.</li>
-                <li>Avaliação: analisamos se o ambiente e a rotina são adequados para receber o animal.</li>
-                <li>Ficha de adoção: preenchemos uma ficha detalhada com informações sobre o adotante com assinatura
-                    e todos os dados, assim viabilizando o contrato de adoção.</li>
-                <li>Adoção responsável: Com tudo aprovado, o animal segue para seu novo lar, onde poderá receber
-                    todo o amor e cuidado que merece.</li>
-            </ol>
-        </nav>
-    </section>
+  <!-- ---------- PETS ---------- -->
+  <section id="animais">
+    <div class="container">
+      <div class="cabecalho-animais">
+        <div>
+          <h2>Disponíveis para adoção</h2>
+          <p>Alguns dos animais que estão esperando por uma família agora.</p>
+        </div>
+        <a href="#" class="botao botao-contorno">Ver todos os animais</a>
+      </div>
 
-    <section id="bichinhos">
-        <nav>
-            <h2>Animais</h2>
-            <ul>
-                <li>EXEMPLO 1 - GATO</li>
-                <li>EXEMPLO 2 - CACHORRO</li>
-                <li>EXEMPLO 3 - CACHORRO</li>
-            </ul>
-        </nav>
-    </section>
+      <div class="grade-animais">
+        <article class="cartao-animal">
+          <div class="foto-animal"><span>🐕</span></div>
+          <div class="info-animal">
+            <h3>Nina</h3>
+            <div class="metadados">Vira-lata · fêmea · 2 anos · porte médio</div>
+            <p>Dócil, brincalhona e ótima com crianças. Já castrada e com todas as vacinas em dia.</p>
+            <a href="#" class="botao botao-principal">Quero conhecer a Nina</a>
+          </div>
+        </article>
 
-    <section id="contato">
-        <nav>
-            <h2>CONTATO</h2>
-            <address>Tel: (13) 99628-2186</address>
-            <address>Email: lardospets200@gmail.com</address>
-            <address>CPNJ: 46.247.908/0001-03</address>
-        </nav>
-    </section>
+        <article class="cartao-animal">
+          <div class="foto-animal"><span>🐈</span></div>
+          <div class="info-animal">
+            <h3>Tico</h3>
+            <div class="metadados">Gato SRD · macho · 1 ano · porte pequeno</div>
+            <p>Independente e curioso, se adapta bem a apartamentos. Convive tranquilo com outros gatos.</p>
+            <a href="#" class="botao botao-principal">Quero conhecer o Tico</a>
+          </div>
+        </article>
 
-    <p>
-        <a href="#topo">Volta ao topo</a>
-    </p>
+        <article class="cartao-animal">
+          <div class="foto-animal"><span>🐕‍🦺</span></div>
+          <div class="info-animal">
+            <h3>Duque</h3>
+            <div class="metadados">Vira-lata · macho · 4 anos · porte grande</div>
+            <p>Calmo e protetor, ideal para quem tem quintal. Adora uma caminhada longa no fim do dia.</p>
+            <a href="#" class="botao botao-principal">Quero conhecer o Duque</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- DEPOIMENTO ---------- -->
+  <section class="depoimento">
+    <div class="container depoimento-interno">
+      <blockquote>“A equipe acompanhou cada etapa com a gente. Hoje o Bento faz parte da família como se sempre tivesse estado aqui.”</blockquote>
+      <cite>Carla Menezes — adotou o Bento em 2024</cite>
+    </div>
+  </section>
+
+  <!-- ---------- CTA ---------- -->
+  <section id="ajudar" class="banner-acao">
+    <div class="container">
+      <h2>Você também pode mudar uma história.</h2>
+      <p>Adote, seja um lar temporário ou contribua com uma doação mensal para ração, vacinas e castrações.</p>
+      <div class="acoes-destaque">
+        <a href="#" class="botao botao-principal">Fazer uma doação</a>
+        <a href="#" class="botao botao-contorno">Ser lar temporário</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container grade-rodape">
+    <div>
+      <span class="logotipo">Lar dos Pets</span>
+      <p>Organização sem fins lucrativos dedicada ao resgate, cuidado e adoção responsável de cães e gatos.</p>
+    </div>
+    <div>
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#missao">Sobre</a></li>
+        <li><a href="#processo">Como funciona</a></li>
+        <li><a href="#animais">Animais</a></li>
+        <li><a href="#ajudar">Como ajudar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:contato@lardospets.org">contato@lardospets.org</a></li>
+        <li><a href="tel:+551140028922">(11) 4002-8922</a></li>
+        <li><a href="#">Rua das Acácias, 245 — SP</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Redes sociais</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container rodape-inferior">
+    <span>© 2026 Lar dos Pets. Todos os direitos reservados.</span>
+    <span>CNPJ 00.000.000/0001-00</span>
+  </div>
+</footer>
 
 </body>
-
 </html>
