@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 30px 15px;
+  color: #142433;
+  background: #eaf3fb;
+  font-family: Arial, sans-serif;
+}
+
+.formulario-voluntario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(16, 48, 77, 0.15);
+}
+
+.formulario-voluntario h2 {
+  margin: 0 0 25px;
+  color: #10304d;
+  text-align: center;
+}
+
+.formulario-voluntario form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: transparent;
+}
+
+.formulario-voluntario label {
+  margin-top: 8px;
+  color: #10304d;
+  font-weight: bold;
+}
+
+.formulario-voluntario input,
+.formulario-voluntario select,
+.formulario-voluntario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b9cfe1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.formulario-voluntario textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.formulario-voluntario input:focus,
+.formulario-voluntario select:focus,
+.formulario-voluntario textarea:focus {
+  outline: 2px solid #6fa8d8;
+  border-color: #2e6da4;
+}
+
+.formulario-voluntario button {
+  margin-top: 18px;
+  padding: 12px;
+  color: #ffffff;
+  background: #10304d;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+}
+
+a:link,a:visited {
+  padding: 5px;
+  text-decoration: none;
+  background: #10304d;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6px;
+}
+
+
+.formulario-voluntario button:hover {
+  background: #2e6da4;
+}
+
+#mensagem-retorno {
+  color: #2e6da4;
+  text-align: center;
+}

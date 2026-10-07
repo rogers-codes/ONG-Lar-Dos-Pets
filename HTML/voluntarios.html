@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários</title>
+    <link rel="stylesheet" href="voluntarios.css">
+</head>
+<body>
+    <section id="area-formulario-voluntario" class="formulario-voluntario">
+  <h2>Quero ser voluntário</h2>
+
+  <form id="formulario-voluntario">
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="cidade">Cidade</label>
+    <input type="text" id="cidade" name="cidade" required>
+
+    <label for="disponibilidade">Disponibilidade</label>
+    <select id="disponibilidade" name="disponibilidade" required>
+      <option value="">Selecione</option>
+      <option value="Durante a semana">Durante a semana</option>
+      <option value="Finais de semana">Finais de semana</option>
+      <option value="Ambos">Ambos</option>
+    </select>
+
+    <label for="mensagem">Como deseja ajudar?</label>
+    <textarea id="mensagem" name="mensagem" required></textarea>
+    <button type="submit">Enviar cadastro</button>
+    <a href="index.html">Voltar</a>
+  </form>
+  <p id="mensagem-retorno"></p>
+</section>
+
+<script>
+  const formulario = document.getElementById("formulario-voluntario");
+  const mensagemRetorno = document.getElementById("mensagem-retorno");
+  const numeroWhatsApp = "5513997170586";
+
+  formulario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    const dados = new FormData(formulario);
+    const mensagem = [
+      "Olá! Gostaria de me tornar um voluntário na Lar dos Pets.",
+      "",
+      `Nome: ${dados.get("nome")}`,
+      `E-mail: ${dados.get("email")}`,
+      `Telefone: ${dados.get("telefone")}`,
+      `Cidade: ${dados.get("cidade")}`,
+      `Disponibilidade: ${dados.get("disponibilidade")}`,
+      `Como desejo ajudar: ${dados.get("mensagem")}`
+    ].join("\n");
+
+    const linkWhatsApp =
+      `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(linkWhatsApp, "_blank");
+    mensagemRetorno.textContent =
+      ". Revise os dados e clique em enviar no WhatsApp.";
+  });
+</script>
+    
+</body>
+</html>
