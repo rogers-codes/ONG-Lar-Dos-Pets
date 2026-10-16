@@ -17,7 +17,7 @@
   html{ scroll-behavior: smooth; }
   body{
     margin:0;
-    font-family:'Inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--ink);
     background: var(--white);
     line-height: 1.6;
@@ -61,8 +61,9 @@
     font-weight: 600;
   }
   .icone-logotipo{
-    width:36px;
-    height:36px;
+    width:46px;
+    height:46px;
+    margin: 10px;
     border-radius: 50%;
     background: var(--navy);
     color: var(--white);
