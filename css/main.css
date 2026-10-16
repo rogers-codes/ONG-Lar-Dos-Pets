@@ -146,15 +146,18 @@
   .estatisticas-destaque div span{ font-size: 14px; color: var(--ink-soft); }
 
   .arte-destaque{
-    height: 360px;
+    height: 460px;
     border-radius: var(--radius-lg);
+    overflow: hidden;
     background: linear-gradient(145deg, var(--blue-soft), var(--blue));
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    box-shadow: 0 20px 40px rgba(16,48,77,.18);
   }
-  .arte-destaque span{
-    font-size: 110px;
+  .arte-destaque img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
   }
 
   /* ---------- Mission ---------- */
@@ -210,8 +213,10 @@
 
   /* ---------- Process ---------- */
   .processo{ background: var(--navy); color: var(--white); }
-  .processo h2{ color: var(--white); font-size: 32px; }
-  .processo > .container > p{ color: #BFD6EA; max-width: 520px; margin-top: 14px; font-size: 17px; }
+  .processo h2{ color: var(--white); font-size: 32px; text-align: center; }
+  .processo > .container > p{ color: #BFD6EA; max-width: 520px; margin: 14px auto 0; font-size: 17px; text-align: center; }
+  .processo > .container > p a{ color: var(--blue-soft); text-decoration: underline; }
+
   .etapas{
     margin-top: 56px;
     display:grid;
