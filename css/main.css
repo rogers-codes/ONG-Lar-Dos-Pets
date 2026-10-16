@@ -369,3 +369,108 @@
     font-size: 13.5px;
     color: #8FADC7;
   }
+
+  /* ---------- Catalog ---------- */
+  .cabecalho-catalogo{
+    background: var(--sky);
+    padding: 72px 0;
+    text-align: center;
+  }
+  .cabecalho-catalogo h1{
+    font-size: clamp(32px, 5vw, 52px);
+  }
+  .cabecalho-catalogo p{
+    max-width: 680px;
+    margin: 16px auto 0;
+    color: var(--ink-soft);
+    font-size: 17px;
+  }
+  .resumo-catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    margin-top: 28px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .voltar-catalogo{
+    display: inline-block;
+    margin-top: 28px;
+  }
+  .secao-catalogo{
+    padding: 72px 0;
+  }
+  .secao-catalogo + .secao-catalogo{
+    padding-top: 0;
+  }
+  .titulo-secao-catalogo{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .titulo-secao-catalogo h2{
+    font-size: 32px;
+  }
+  .titulo-secao-catalogo span{
+    color: var(--ink-soft);
+  }
+  .grade-catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 32px;
+  }
+  .cartao-catalogo{
+    overflow: hidden;
+    background: var(--sky);
+    border: 1px solid var(--sky-mid);
+    border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-lg);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .cartao-catalogo:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(16,48,77,.14);
+  }
+  .imagem-catalogo{
+    display: flex;
+    min-height: 180px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background: linear-gradient(160deg, var(--blue-soft), var(--blue));
+  }
+  .emoji-animal{
+    font-size: 72px;
+    line-height: 1;
+  }
+  .imagem-catalogo small{
+    color: var(--white);
+    font-size: 12px;
+  }
+  .conteudo-catalogo{
+    padding: 22px 24px 26px;
+  }
+  .conteudo-catalogo p{
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 14.5px;
+  }
+
+  @media (max-width: 800px){
+    .grade-catalogo{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 560px){
+    .cabecalho-catalogo,
+    .secao-catalogo{
+      padding: 56px 0;
+    }
+    .grade-catalogo{
+      grid-template-columns: 1fr;
+    }
+  }
