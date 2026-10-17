@@ -34,8 +34,8 @@
         <h1>Encontre seu novo melhor amigo.</h1>
         <p>Conheça os animais que estão esperando por uma família. Cada perfil tem espaço para uma foto e informações para ajudar você a encontrar uma companhia que combine com sua rotina.</p>
         <div class="resumo-catalogo" aria-label="Resumo do catálogo">
-          <span>6 gatos disponíveis</span>
-          <span>30 cachorros disponíveis</span>
+          <span>5 gatos disponíveis</span>
+          <span>18 cachorros disponíveis</span>
         </div>
         <a href="index.html" class="botao botao-contorno voltar-catalogo">Voltar para a página inicial</a>
       </div>
@@ -45,7 +45,7 @@
       <div class="container">
         <div class="titulo-secao-catalogo">
           <h2>Gatos</h2>
-          <span>6 animais esperando por um lar</span>
+          <span>5 animais esperando por um lar</span>
         </div>
         <div class="grade-catalogo">
           <article class="cartao-catalogo"><div class="imagem-catalogo"><span class="emoji-animal">🐈</span><small>Espaço para imagem</small></div><div class="conteudo-catalogo"><p>Carinhosa e tranquila, adora receber cafuné e se adapta bem a apartamentos.</p></div></article>
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="titulo-secao-catalogo">
           <h2>Cachorros</h2>
-          <span>30 animais esperando por um lar</span>
+          <span>18 animais esperando por um lar</span>
         </div>
         <div class="grade-catalogo">
           <article class="cartao-catalogo"><div class="imagem-catalogo"><span class="emoji-animal">🐕</span><small>Espaço para imagem</small></div><div class="conteudo-catalogo"><p>Dócil e brincalhona, adora crianças e passeios.</p></div></article>
@@ -112,5 +112,165 @@
       <a href="index.html">Voltar para a página inicial</a>
     </div>
   </footer>
+  <script>
+    const gatos = [
+      "gatos_brancos/gato-004.jpg", "gatos_brancos/gato-028.jpg",
+      "gatos_cinzas/gato-001.jpg", "gatos_cinzas/gato-027.jpg", "gatos_cinzas/gato-039.jpg",
+      "gatos_misticos/gato-014.jpg", "gatos_misticos/gato-037.jpg",
+      "gatos_misticos_2/gato-043.jpg", "gatos_misticos_2/gato-062.jpg",
+      "gatos_tigrados/gato-009.jpg", "gatos_tigrados/gato-044.jpg",
+      "gatos_tigrados/gato-046.jpg", "gatos_tigrados/gato-052.jpg"
+    ];
+
+    const cachorros = [
+      "arrecadacoes/cachorro-060.jpg", "cachorro_caramelo/cachorro-016.jpg",
+      "cachorro_caramelo02/cachorro-016.jpg", "cachorro_caramelo2/cachorro-002.jpg",
+      "cachorro_caramelo2/cachorro-007.jpg", "cachorro_caramelo2/cachorro-022.jpg",
+      "cachorro_caramelo2/cachorro-024.jpg", "cachorro_caramelo2/cachorro-058.jpg",
+      "cachorro_caramelo_preto/cachorro-003.jpg", "cachorro_caramelo_preto/cachorro-019.jpg",
+      "cachorro_caramelo_preto/cachorro-025.jpg", "cachorro_caramelo_preto/cachorro-033.jpg",
+      "cachorro_caramelo_preto/cachorro-049.jpg", "cachorro_cinza/cachorro-009.jpg",
+      "cachorro_cinza/cachorro-011.jpg", "cachorro_cinza/cachorro-023.jpg",
+      "cachorro_irmaos/cachorro-010.jpg", "cachorro_irmaos/cachorro-022.jpg",
+      "cachorro_irmaos/cachorro-026.jpg", "cachorro_irmaos/cachorro-051.jpg",
+      "cachorro_irmaos/cachorro-057.jpg", "cachorro_irmaos2/cachorro-017.jpg",
+      "cachorro_irmaos2/cachorro-041.jpg", "cachorro_irmaos2/cachorro-042.jpg",
+      "cachorro_irmaos2/cachorro-045.jpg", "cachorro_irmaos2/cachorro-054.jpg",
+      "cachorro_irmaos2/cachorro-061.jpg", "cachorro_pelescura01/cachorro-002.jpg",
+      "cachorro_pelescura01/cachorro-005.jpg", "cachorro_pelescura01/cachorro-019.jpg",
+      "cachorro_pelescura01/cachorro-020.jpg", "cachorro_pelescura01/cachorro-021.jpg",
+      "cachorro_pelescura01/cachorro-029.jpg", "cachorro_pelescura01/cachorro-034.jpg",
+      "cachorro_pelescura01/cachorro-035.jpg", "cachorro_pelescura01/cachorro-047.jpg",
+      "cachorro_pelescura01/cachorro-055.jpg", "cachorro_pelescura01/cachorro-059.jpg",
+      "cachorro_pintado/cachorro-006.jpg", "cachorro_pintado/cachorro-012.jpg",
+      "cachorro_pintado/cachorro-020.jpg", "cachorro_pitbull/cachorro-003.jpg",
+      "cachorro_pretobranco05/cachorro-013.jpg", "cachorro_pretobranco1/Pett.jpg",
+      "cachorro_pretobranco1/cachorro-004.jpg", "cachorro_pretobranco1/cachorro-011.jpg",
+      "cachorro_pretobranco1/cachorro-015.jpg", "cachorro_pretobranco1/cachorro-031.jpg",
+      "cachorro_pretobranco1/cachorro-032.jpg", "cachorro_pretobranco1/cachorro-040.jpg",
+      "cachorro_pretobranco1/cachorro-050.jpg", "cachorro_pretobranco1/cachorro-063.jpg",
+      "cachorro_pretobranco2/cachorro-006.jpg", "cachorro_pretobranco2/cachorro-010.jpg",
+      "cachorro_pretobranco2/cachorro-012.jpg", "cachorro_pretobranco3/cachorro-008.jpg",
+      "cachorro_pretobranco3/cachorro-038.jpg", "cachorro_pretobranco3/cachorro-048.jpg",
+      "cachorro_pretobranco3/cachorro-056.jpg", "cachorro_pretobranco4/cachorro-017.jpg",
+      "cachorro_pretobranco4/cachorro-036.jpg", "cachorro_raposinha/cachorro-013.jpg",
+      "cachorro_raposinha/cachorro-014.jpg", "cachorros_familia/cachorro-005.jpg",
+      "cachorros_familia/cachorro-018.jpg"
+    ];
+
+    const grupos = (arquivos) => Object.values(arquivos.reduce((resultado, arquivo) => {
+      const pasta = arquivo.split("/")[0];
+      if (!resultado[pasta]) resultado[pasta] = [];
+      resultado[pasta].push(arquivo);
+      return resultado;
+    }, {}));
+
+    const escapar = (texto) => texto.replace(/&/g, "&amp;").replace(/"/g, "&quot;")
+      .replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    function montarCartoes(arquivos, tipo) {
+      const pasta = tipo === "Gato" ? "gato" : "cachorro";
+      return grupos(arquivos).map((imagens, indice) => {
+        const nome = `${tipo} ${String(indice + 1).padStart(2, "0")}`;
+        const imagensJson = escapar(JSON.stringify(imagens));
+        return `<article class="cartao-catalogo">
+          <button class="imagem-catalogo imagem-clicavel" type="button"
+            data-pasta="${pasta}" data-imagens="${imagensJson}"
+            data-nome="${nome}" aria-label="Ver fotos de ${nome}">
+            <img src="../../imgs-${pasta}/${imagens[0]}" alt="${nome} disponível para adoção" loading="lazy">
+            ${imagens.length > 1 ? `<span class="indicador-galeria">${imagens.length} fotos</span>` : ""}
+          </button>
+          <div class="conteudo-catalogo">
+            <h3>${nome}</h3>
+            <p>Este animal está esperando uma família responsável, com carinho, cuidado e um lar seguro.</p>
+          </div>
+        </article>`;
+      }).join("");
+    }
+
+    document.querySelector("#gatos .grade-catalogo").innerHTML = montarCartoes(gatos, "Gato");
+    document.querySelector("#cachorros .grade-catalogo").innerHTML = montarCartoes(cachorros, "Cachorro");
+
+    document.body.insertAdjacentHTML("beforeend", `
+      <div class="modal-galeria" role="dialog" aria-modal="true" aria-labelledby="titulo-galeria" hidden>
+        <div class="galeria-conteudo">
+          <button class="fechar-galeria" type="button" aria-label="Fechar galeria">&times;</button>
+          <h2 id="titulo-galeria"></h2>
+          <div class="galeria-imagem">
+            <button class="controle-galeria anterior" type="button" aria-label="Foto anterior">&#8592;</button>
+            <img alt="">
+            <button class="controle-galeria proxima" type="button" aria-label="Próxima foto">&#8594;</button>
+          </div>
+          <p class="contador-galeria"></p>
+          <div class="miniaturas-galeria"></div>
+        </div>
+      </div>
+    `);
+
+    const modal = document.querySelector(".modal-galeria");
+    const imagemGaleria = modal.querySelector(".galeria-imagem img");
+    const tituloGaleria = modal.querySelector("#titulo-galeria");
+    const contadorGaleria = modal.querySelector(".contador-galeria");
+    const miniaturasGaleria = modal.querySelector(".miniaturas-galeria");
+    let imagensAtuais = [];
+    let indiceAtual = 0;
+
+    function atualizarGaleria() {
+      const imagem = imagensAtuais[indiceAtual];
+      imagemGaleria.src = `../../imgs-${modal.dataset.pasta}/${imagem}`;
+      imagemGaleria.alt = `${tituloGaleria.textContent}, foto ${indiceAtual + 1}`;
+      contadorGaleria.textContent = `${indiceAtual + 1} de ${imagensAtuais.length}`;
+      miniaturasGaleria.querySelectorAll("button").forEach((botao, indice) => {
+        botao.classList.toggle("selecionada", indice === indiceAtual);
+      });
+    }
+
+    function abrirGaleria(botao) {
+      imagensAtuais = JSON.parse(botao.dataset.imagens);
+      indiceAtual = 0;
+      modal.dataset.pasta = botao.dataset.pasta;
+      tituloGaleria.textContent = botao.dataset.nome;
+      miniaturasGaleria.innerHTML = imagensAtuais.map((imagem, indice) =>
+        `<button type="button" aria-label="Ver foto ${indice + 1}">
+          <img src="../../imgs-${botao.dataset.pasta}/${imagem}" alt="">
+        </button>`
+      ).join("");
+      miniaturasGaleria.querySelectorAll("button").forEach((miniatura, indice) => {
+        miniatura.addEventListener("click", () => {
+          indiceAtual = indice;
+          atualizarGaleria();
+        });
+      });
+      atualizarGaleria();
+      modal.hidden = false;
+      document.body.classList.add("galeria-aberta");
+      modal.querySelector(".fechar-galeria").focus();
+    }
+
+    document.querySelectorAll(".imagem-clicavel").forEach((botao) => {
+      botao.addEventListener("click", () => abrirGaleria(botao));
+    });
+    modal.querySelector(".fechar-galeria").addEventListener("click", () => {
+      modal.hidden = true;
+      document.body.classList.remove("galeria-aberta");
+    });
+    modal.querySelector(".anterior").addEventListener("click", () => {
+      indiceAtual = (indiceAtual - 1 + imagensAtuais.length) % imagensAtuais.length;
+      atualizarGaleria();
+    });
+    modal.querySelector(".proxima").addEventListener("click", () => {
+      indiceAtual = (indiceAtual + 1) % imagensAtuais.length;
+      atualizarGaleria();
+    });
+    modal.addEventListener("click", (evento) => {
+      if (evento.target === modal) modal.querySelector(".fechar-galeria").click();
+    });
+    document.addEventListener("keydown", (evento) => {
+      if (modal.hidden) return;
+      if (evento.key === "Escape") modal.querySelector(".fechar-galeria").click();
+      if (evento.key === "ArrowLeft") modal.querySelector(".anterior").click();
+      if (evento.key === "ArrowRight") modal.querySelector(".proxima").click();
+    });
+  </script>
 </body>
 </html>
