@@ -35,7 +35,7 @@
         <p>Conheça os animais que estão esperando por uma família. Cada perfil tem espaço para uma foto e informações para ajudar você a encontrar uma companhia que combine com sua rotina.</p>
         <div class="resumo-catalogo" aria-label="Resumo do catálogo">
           <span>5 gatos disponíveis</span>
-          <span>18 cachorros disponíveis</span>
+          <span>17 cachorros disponíveis</span>
         </div>
         <a href="index.html" class="botao botao-contorno voltar-catalogo">Voltar para a página inicial</a>
       </div>
@@ -62,7 +62,7 @@
       <div class="container">
         <div class="titulo-secao-catalogo">
           <h2>Cachorros</h2>
-          <span>18 animais esperando por um lar</span>
+          <span>17 animais esperando por um lar</span>
         </div>
         <div class="grade-catalogo">
           <article class="cartao-catalogo"><div class="imagem-catalogo"><span class="emoji-animal">🐕</span><small>Espaço para imagem</small></div><div class="conteudo-catalogo"><p>Dócil e brincalhona, adora crianças e passeios.</p></div></article>
@@ -123,7 +123,7 @@
     ];
 
     const cachorros = [
-      "arrecadacoes/cachorro-060.jpg", "cachorro_caramelo/cachorro-016.jpg",
+      "cachorro_caramelo/cachorro-016.jpg",
       "cachorro_caramelo02/cachorro-016.jpg", "cachorro_caramelo2/cachorro-002.jpg",
       "cachorro_caramelo2/cachorro-007.jpg", "cachorro_caramelo2/cachorro-022.jpg",
       "cachorro_caramelo2/cachorro-024.jpg", "cachorro_caramelo2/cachorro-058.jpg",
@@ -172,9 +172,10 @@
       const pasta = tipo === "Gato" ? "gato" : "cachorro";
       return grupos(arquivos).map((imagens, indice) => {
         const nome = `${tipo} ${String(indice + 1).padStart(2, "0")}`;
+        const grupo = imagens[0].split("/")[0];
         const imagensJson = escapar(JSON.stringify(imagens));
         return `<article class="cartao-catalogo">
-          <button class="imagem-catalogo imagem-clicavel" type="button"
+          <button class="imagem-catalogo imagem-clicavel imagem-catalogo-${grupo}" type="button"
             data-pasta="${pasta}" data-imagens="${imagensJson}"
             data-nome="${nome}" aria-label="Ver fotos de ${nome}">
             <img src="../../imgs-${pasta}/${imagens[0]}" alt="${nome} disponível para adoção" loading="lazy">

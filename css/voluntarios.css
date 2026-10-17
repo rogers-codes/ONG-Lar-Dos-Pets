@@ -91,3 +91,9 @@ a:link,a:visited {
   color: #2e6da4;
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .formulario-voluntario {
+    padding: 20px;
+  }
+}
