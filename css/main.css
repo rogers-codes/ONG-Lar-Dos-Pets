@@ -402,18 +402,14 @@
     border-radius:16px;
     object-fit:cover;
   }
-  .qr-code-placeholder{
-    display:flex;
-    min-height:220px;
-    padding:20px;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    border:2px dashed #C5CCF0;
-    border-radius:16px;
-    color:var(--white);
-  }
+ .qr-code {
+  display: block;
+  height: 260px;
+  width: auto;
+  border-radius: 16px;
+  object-fit: contain;
+}
+  
   .qr-code-placeholder span{
     font-size:22px;
     font-weight:700;
