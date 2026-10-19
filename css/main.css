@@ -56,31 +56,28 @@
     align-items:center;
     justify-content: space-between;
   }
-  .logotipo{
-    display:flex;
-    align-items:center;
-    gap:10px;
+  .logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 22px;
     font-weight: 600;
-  }
-  .icone-logotipo{
-    width:46px;
-    height:46px;
-    margin: 10px;
-    border-radius: 50%;
-    background: var(--navy);
-    color: var(--white);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-  }
-  .icone-logotipo img{
-    width:100%;
-    height:auto;
-    max-width:80px;
-    object-fit:contain;
-  }
+    padding-top: 9px;   /* empurra o texto um pouco pra baixo */
+}
+.icone-logotipo {
+    width: 66px;
+    height: 66px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.icone-logotipo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
   nav ul{ display:flex; gap: 36px; }
   nav a{
     font-weight: 500;
