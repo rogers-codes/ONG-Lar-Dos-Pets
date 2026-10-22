@@ -176,6 +176,28 @@
   }
 
   /* ---------- Mission ---------- */
+.historia{  display:grid;
+    grid-template-columns: 3.85fr 1.15fr;
+    gap: 64px;
+    
+  }
+ 
+.historia h1{
+    font-size: 32px;
+    line-height:1.2;
+  }
+
+ 
+
+  .historia p{
+    color: var(--ink-soft);
+    margin-top: -385px;
+    font-size: 24px;
+    max-width: 560px;
+  }
+
+  
+
   .missao-conteudo{
     display:grid;
     grid-template-columns: 0.85fr 1.15fr;
