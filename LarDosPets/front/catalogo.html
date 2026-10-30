@@ -116,11 +116,11 @@
   <script>
     const gatos = [
       "gatos_brancos/gato-004.jpg", "gatos_brancos/gato-028.jpg",
-      "gatos_cinzas/gato-001.jpg", "gatos_cinzas/gato-027.jpg", "gatos_cinzas/gato-039.jpg",
+      "gatos_cinzas/gato-027.jpg", "gatos_cinzas/gato-001.jpg",
       "gatos_misticos/gato-014.jpg", "gatos_misticos/gato-037.jpg",
       "gatos_misticos_2/gato-043.jpg", "gatos_misticos_2/gato-062.jpg",
-      "gatos_tigrados/gato-009.jpg", "gatos_tigrados/gato-044.jpg",
-      "gatos_tigrados/gato-046.jpg", "gatos_tigrados/gato-052.jpg"
+      "gatos_tigrados/gato-046.jpg", "gatos_tigrados/gato-044.jpg",
+      "gatos_tigrados/gato-009.jpg", "gatos_tigrados/gato-052.jpg"
     ];
 
     const cachorros = [
@@ -129,34 +129,24 @@
       "cachorro_caramelo2/cachorro-007.jpg", "cachorro_caramelo2/cachorro-022.jpg",
       "cachorro_caramelo2/cachorro-024.jpg", "cachorro_caramelo2/cachorro-058.jpg",
       "cachorro_caramelo_preto/cachorro-003.jpg", "cachorro_caramelo_preto/cachorro-019.jpg",
-      "cachorro_caramelo_preto/cachorro-025.jpg", "cachorro_caramelo_preto/cachorro-033.jpg",
-      "cachorro_caramelo_preto/cachorro-049.jpg", "cachorro_cinza/cachorro-009.jpg",
-      "cachorro_cinza/cachorro-011.jpg", "cachorro_cinza/cachorro-023.jpg",
+      "cachorro_caramelo_preto/cachorro-025.jpg", "cachorro_caramelo_preto/cachorro-033.jpg", "cachorro_caramelo_preto/cachorro-049.jpg", 
+      "cachorro_cinza/cachorro-023.jpg", "cachorro_cinza/cachorro-011.jpg", "cachorro_cinza/cachorro-009.jpg",
       "cachorro_irmaos/cachorro-010.jpg", "cachorro_irmaos/cachorro-022.jpg",
       "cachorro_irmaos/cachorro-026.jpg", "cachorro_irmaos/cachorro-051.jpg",
-      "cachorro_irmaos/cachorro-057.jpg", "cachorro_irmaos2/cachorro-017.jpg",
-      "cachorro_irmaos2/cachorro-041.jpg", "cachorro_irmaos2/cachorro-042.jpg",
-      "cachorro_irmaos2/cachorro-045.jpg", "cachorro_irmaos2/cachorro-054.jpg",
-      "cachorro_irmaos2/cachorro-061.jpg", "cachorro_pelescura01/cachorro-002.jpg",
-      "cachorro_pelescura01/cachorro-005.jpg", "cachorro_pelescura01/cachorro-019.jpg",
-      "cachorro_pelescura01/cachorro-020.jpg", "cachorro_pelescura01/cachorro-021.jpg",
-      "cachorro_pelescura01/cachorro-029.jpg", "cachorro_pelescura01/cachorro-034.jpg",
-      "cachorro_pelescura01/cachorro-035.jpg", "cachorro_pelescura01/cachorro-047.jpg",
-      "cachorro_pelescura01/cachorro-055.jpg", "cachorro_pelescura01/cachorro-059.jpg",
-      "cachorro_pintado/cachorro-006.jpg", "cachorro_pintado/cachorro-012.jpg",
-      "cachorro_pintado/cachorro-020.jpg", "cachorro_pitbull/cachorro-003.jpg",
-      "cachorro_pretobranco05/cachorro-013.jpg", "cachorro_pretobranco1/Pett.jpg",
-      "cachorro_pretobranco1/cachorro-004.jpg", "cachorro_pretobranco1/cachorro-011.jpg",
-      "cachorro_pretobranco1/cachorro-015.jpg", "cachorro_pretobranco1/cachorro-031.jpg",
-      "cachorro_pretobranco1/cachorro-032.jpg", "cachorro_pretobranco1/cachorro-040.jpg",
-      "cachorro_pretobranco1/cachorro-050.jpg", "cachorro_pretobranco1/cachorro-063.jpg",
-      "cachorro_pretobranco2/cachorro-006.jpg", "cachorro_pretobranco2/cachorro-010.jpg",
-      "cachorro_pretobranco2/cachorro-012.jpg", "cachorro_pretobranco3/cachorro-008.jpg",
-      "cachorro_pretobranco3/cachorro-038.jpg", "cachorro_pretobranco3/cachorro-048.jpg",
-      "cachorro_pretobranco3/cachorro-056.jpg", "cachorro_pretobranco4/cachorro-017.jpg",
-      "cachorro_pretobranco4/cachorro-036.jpg", "cachorro_raposinha/cachorro-013.jpg",
-      "cachorro_raposinha/cachorro-014.jpg", "cachorros_familia/cachorro-005.jpg",
-      "cachorros_familia/cachorro-018.jpg"
+      "cachorro_irmaos2/cachorro-045.jpg", "cachorro_irmaos2/cachorro-041.jpg", "cachorro_irmaos2/cachorro-042.jpg",
+      "cachorro_irmaos2/cachorro-017.jpg", "cachorro_irmaos2/cachorro-061.jpg", 
+      "cachorro_pelescura01/cachorro-002.jpg", "cachorro_pelescura01/cachorro-019.jpg", 
+      "cachorro_pelescura01/cachorro-021.jpg", "cachorro_pelescura01/cachorro-029.jpg", 
+      "cachorro_pintado/cachorro-012.jpg",     "cachorro_pintado/cachorro-006.jpg",
+      "cachorro_pitbull/cachorro-003.jpg",     "cachorro_pretobranco05/cachorro-013.jpg",
+      "cachorro_pretobranco1/cachorro-015.jpg", "cachorro_pretobranco1/cachorro-004.jpg", 
+      "cachorro_pretobranco1/cachorro-032.jpg", "cachorro_pretobranco1/cachorro-050.jpg", "cachorro_pretobranco1/cachorro-063.jpg", 
+      "cachorro_pretobranco2/cachorro-012.jpg", "cachorro_pretobranco2/cachorro-006.jpg", 
+      "cachorro_pretobranco2/cachorro-006.jpg", "cachorro_pretobranco2/cachorro-010.jpg", 
+      "cachorro_pretobranco3/cachorro-008.jpg", "cachorro_pretobranco3/cachorro-038.jpg", 
+      "cachorro_pretobranco4/cachorro-017.jpg", "cachorro_pretobranco4/cachorro-036.jpg", 
+      "cachorro_raposinha/cachorro-014.jpg",    "cachorro_raposinha/cachorro-013.jpg",    
+      "cachorros_familia/cachorro-005.jpg",     "cachorros_familia/cachorro-018.jpg"
     ];
 
     const grupos = (arquivos) => Object.values(arquivos.reduce((resultado, arquivo) => {
@@ -273,6 +263,48 @@
       if (evento.key === "ArrowLeft") modal.querySelector(".anterior").click();
       if (evento.key === "ArrowRight") modal.querySelector(".proxima").click();
     });
+
+    const nomes = {
+  // Cachorros
+  "Cachorro 01": "Perdigueiro",
+  "Cachorro 02": "Cambitinho",
+  "Cachorro 03": "Luna",
+  "Cachorro 04": "Frajola",
+  "Cachorro 05": "Bolota",
+  "Cachorro 06": "Branquinho e Donatella",
+  "Cachorro 07": "Romeu e Estopa", 
+  "Cachorro 08": "Negão",
+  "Cachorro 09": "Rex",
+  "Cachorro 10": "Cristal",
+  "Cachorro 11": "Fiel",
+  "Cachorro 12": "Chiquinho",
+  "Cachorro 13": "Zeca",
+  "Cachorro 14": "Billy",
+  "Cachorro 15": "Apollo",
+  "Cachorro 16": "Hanna",
+  "Cachorro 17": "Chiquinho e Bob",
+
+  // Gatos
+  "Gato 01": "Nina",
+  "Gato 02": "Fumaça",
+  "Gato 03": "Mingau",
+  "Gato 04": "Pipoca",
+  "Gato 05": "Ferrugem",
+};
+
+document.querySelectorAll("h3").forEach((titulo) => {
+  const antigo = titulo.textContent.trim();
+  if (nomes[antigo]) titulo.textContent = nomes[antigo];
+});
+
+document.querySelectorAll("img[alt]").forEach((img) => {
+  for (const antigo in nomes) {
+    if (img.alt.startsWith(antigo)) {
+      img.alt = img.alt.replace(antigo, nomes[antigo]);
+    }
+  }
+});
+
   </script>
 </body>
 </html>
