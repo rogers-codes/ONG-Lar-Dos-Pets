@@ -329,25 +329,28 @@
     object-fit:cover;
     display:block;
   }
-  .imagem-catalogo-gatos_brancos img{ object-position: center center; }
-  .imagem-catalogo-gatos_cinzas img{ object-position: center center; }
-  .imagem-catalogo-gatos_misticos img{ object-position: center 30%; }
-  .imagem-catalogo-gatos_misticos_2 img{ object-position: 20% 55%; }
-  .imagem-catalogo-gatos_tigrados img{ object-position: center 70%; }
-  .imagem-catalogo-cachorro_caramelo img{ object-position: center top; }
-  .imagem-catalogo-cachorro_caramelo02 img{ object-position: center 75%; }
-  .imagem-catalogo-cachorro_caramelo2 img{ object-position: center 40%; }
-  .imagem-catalogo-cachorro_caramelo_preto img{ object-position: 35% 75%; }
-  .imagem-catalogo-cachorro_cinza img{ object-position: 25% 75%; }
-  .imagem-catalogo-cachorro_irmaos2 img{ object-position: 75% 80%; }
-  .imagem-catalogo-cachorro_pintado img{ object-position: center 80%; }
-  .imagem-catalogo-cachorro_pretobranco05 img{ object-position: center 65%; }
-  .imagem-catalogo-cachorro_pretobranco1 img{ object-position: center 80%; }
-  .imagem-catalogo-cachorro_pretobranco2 img{ object-position: center 75%; }
-  .imagem-catalogo-cachorro_pretobranco3 img{ object-position: 75% 75%; }
-  .foto-animal-caramelo img{ object-position: center top; }
+  .imagem-catalogo-gatos_nina img{ object-position: center center; }
+  .imagem-catalogo-gatos_fumaca img{ object-position: center 47% }
+  .imagem-catalogo-gatos_mingau img{ object-position: center 30%; }
+  .imagem-catalogo-gatos_pipoca img{ object-position: 20% 55%; }
+  .imagem-catalogo-gatos_ferrugem img{ object-position: center 70%; }
+  .imagem-catalogo-cachorro_apollo img{ object-position: center 60%; }
+  .imagem-catalogo-cachorro_perdigueiro img{ object-position: center top; }
+  .imagem-catalogo-cachorro_cambitinho img{ object-position: center 85%; }
+  .imagem-catalogo-cachorro_luna img{ object-position: center 40%; }
+  .imagem-catalogo-cachorro_bolota img{ object-position: 25% 75%; }
+  .imagem-catalogo-cachorro_romeueestopa img{ object-position: center 75% 80%; }
+  .imagem-catalogo-cachorro_branquinhoedonatella img{ object-position: center 75% 80%; }
+  .imagem-catalogo-cachorro_rex img{ object-position: center 80%; }
+  .imagem-catalogo-cachorro_fiel img{ object-position: center 90%; }
+  .imagem-catalogo-cachorro_frajola img{ object-position: center 80%; }
+  .imagem-catalogo-cachorro_hanna img{ object-position: center 70%; }
+  .imagem-catalogo-cachorro_zeca img{ object-position: center 75%; }
+  .imagem-catalogo-cachorro_chiquinho img{ object-position: center 65%; }
+  .imagem-catalogo-cachorro_billy img{ object-position: 25% 100%; }
+  .foto-animal-caramelo img{ object-position: center 20%; }
   .foto-animal-gato img{ object-position: center center; }
-  .foto-animal-preto-branco img{ object-position: center 85%; }
+  .foto-animal-preto-branco img{ object-position: center 70%; }
   .info-animal{ padding: 22px 24px 26px; }
   .info-animal h3{ font-size: 19px; }
   .info-animal .metadados{
@@ -749,4 +752,16 @@
     .destaque h1{ font-size:clamp(34px, 11vw, 48px); }
     .destaque p.introducao{ font-size:17px; }
     .arte-destaque{ height:280px; min-height:0; }
+
+img{ max-width:100%; }
+
+@media (max-width: 850px){
+  .historia{ grid-template-columns: 1fr; gap: 24px; }
+  .historia h1{ margin-top: 0; font-size: 26px; }
+  .historia p{ margin-top: 0; font-size: 18px; max-width: none; }
+  .cachorro-missao{ padding: 0; }
+  .cachorro-missao img{ width: 100%; height: auto; }
+}
+
+   
   }
