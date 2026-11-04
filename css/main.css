@@ -20,6 +20,7 @@
   html{ scroll-behavior: smooth; }
   body{
     margin:0;
+    overflow-x:hidden;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--ink);
     background: var(--white);
@@ -316,6 +317,84 @@
     margin-top: 10px;
   }
 
+  /* ---------- Partnerships ---------- */
+  .parcerias-destaque{
+    background: var(--sky);
+    padding: 80px 0;
+  }
+  .parcerias-cabecalho{
+    text-align:center;
+    max-width: 680px;
+    margin: 0 auto 36px;
+  }
+  .etiqueta-secao{
+    display:block;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .parcerias-destaque h2{
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 8px;
+  }
+  .parcerias-destaque p{
+    color: var(--ink-soft);
+    margin-top: 12px;
+  }
+  .cartao-parceiro{
+    display:grid;
+    grid-template-columns: 220px 1fr;
+    align-items:center;
+    gap: 44px;
+    padding: 36px;
+    background: var(--white);
+    border: 1px solid var(--sky-mid);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 16px 34px rgba(46,53,89,.08);
+  }
+  .logo-parceiro{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 220px;
+    height: 220px;
+    padding: 18px;
+    background: var(--sky);
+    border-radius: 50%;
+    overflow:hidden;
+  }
+  .logo-parceiro img{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius:50%;
+  }
+  .info-parceiro h3{
+    color: var(--navy);
+    font-size: 24px;
+  }
+  .info-parceiro p{
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    margin-top: 12px;
+    max-width: 520px;
+  }
+  .info-parceiro strong{ color: var(--ink); }
+  .contatos-parceiro{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .contatos-parceiro .botao{
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+
   /* ---------- Pets ---------- */
   .cabecalho-animais{
     display:flex;
@@ -347,6 +426,7 @@
     align-items:center;
     justify-content:center;
     font-size: 72px;
+    overflow:hidden;
   }
   .foto-animal img,
   .imagem-catalogo img{
@@ -581,6 +661,7 @@
     flex-direction:column;
     gap: 6px;
     color: var(--white);
+    overflow:hidden;
   }
   .imagem-clicavel{
     width:100%;
@@ -738,34 +819,52 @@
 
   @media (max-width: 850px){
     .navegacao-interna{ flex-wrap:wrap; gap: 16px; }
-    nav{ order: 3; width:100%; overflow-x:auto; }
-    nav ul{ gap: 22px; }
+    nav{ order: 3; width:100%; }
+    nav ul{ gap: 12px 22px; flex-wrap:wrap; justify-content:center; }
     .acoes-cabecalho{ margin-left:auto; }
     .grade-destaque, .missao-conteudo, .historia{ grid-template-columns:1fr; }
     .historia-texto, .cachorro-missao{ grid-column:1; grid-row:auto; }
     .cachorro-missao img{ height:auto; }
-    .grade-animais, .grade-catalogo{ grid-template-columns: repeat(2, 1fr); }
+    .grade-animais, .grade-catalogo{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .etapas{ grid-template-columns:1fr; }
     .grade-rodape{ grid-template-columns: repeat(2, 1fr); }
     .arte-destaque{ height: min(460px, 65vw); min-height:280px; }
     .estatisticas-destaque{ gap:24px; flex-wrap:wrap; }
+    .cartao-parceiro{ gap: 28px; }
   }
+
   @media (max-width: 560px){
-    section{ padding: 64px 0; }
-    .container{ padding: 0 20px; }
-    .navegacao-interna{ padding: 14px 20px; }
-    .logotipo{ font-size:18px; gap:6px; }
+    section{ padding: 48px 0; }
+    .container{ padding: 0 16px; }
+    .navegacao-interna{ padding: 8px 16px 12px; gap: 8px 10px; }
+    .logotipo{ font-size:17px; gap:6px; }
     .icone-logotipo{ width:40px; height:40px; margin:0; }
-    .acoes-cabecalho{ gap:8px; }
-    .acoes-cabecalho .botao{ padding:10px 14px; font-size:14px; }
-    .acoes-cabecalho .botao-contorno{ display:none; }
-    .grade-animais, .grade-catalogo{ grid-template-columns:1fr; }
+    .acoes-cabecalho{
+      order:2;
+      width:100%;
+      margin-left:0;
+      gap:8px;
+    }
+    .acoes-cabecalho .botao{ flex:1; }
+    .acoes-cabecalho .botao{ padding:9px 12px; font-size:13px; }
+    .grade-animais, .grade-catalogo{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; }
     .grade-rodape{ grid-template-columns:1fr; }
-    .cabecalho-catalogo{ padding: 56px 0 48px; }
-    .imagem-catalogo{ height: 290px; }
-    .foto-animal{ height: 290px; }
+    .cartao-parceiro{ grid-template-columns:1fr; gap: 24px; }
+    .cartao-parceiro{ padding: 20px; }
+    .logo-parceiro{ width: 140px; height: 140px; margin: 0 auto; }
+    .cabecalho-catalogo{ padding: 42px 0 36px; }
+    .cabecalho-catalogo h1{ font-size: clamp(30px, 8vw, 38px); }
+    .cabecalho-catalogo p{ font-size:16px; }
+    .imagem-catalogo{ height: clamp(140px, 38vw, 190px); }
+    .foto-animal{ height: clamp(140px, 38vw, 190px); }
+    .imagem-catalogo img,
+    .foto-animal img{ object-fit:cover; }
+    .conteudo-catalogo{ padding:12px 14px 16px; }
+    .conteudo-catalogo h3{ font-size:17px; }
+    .info-animal{ padding:14px 16px 18px; }
+    .info-animal h3{ font-size:17px; }
     .doacao-conteudo{ grid-template-columns:1fr; }
-    .imagem-arrecadacoes{ height:220px; }
+    .imagem-arrecadacoes{ height:180px; }
     .qr-code-placeholder{ min-height:180px; }
     .modal-galeria{ padding:12px; }
     .galeria-conteudo{ padding:24px 16px; }
@@ -777,9 +876,29 @@
     .acoes-destaque .botao{ width:100%; }
     .estatisticas-destaque{ gap:16px; }
     .estatisticas-destaque div{ flex:1 1 90px; }
-    .destaque h1{ font-size:clamp(34px, 11vw, 48px); }
-    .destaque p.introducao{ font-size:17px; }
-    .arte-destaque{ height:280px; min-height:0; }
+    .destaque{ padding:48px 0; }
+    .destaque h1{ font-size:clamp(32px, 9vw, 40px); }
+    .destaque p.introducao{ font-size:16px; margin-top:16px; }
+    .acoes-destaque{ margin-top:24px; gap:10px; }
+    .estatisticas-destaque{ margin-top:32px; padding-top:20px; }
+    .estatisticas-destaque div strong{ font-size:21px; }
+    .estatisticas-destaque div span{ font-size:12px; }
+    .arte-destaque{ height:220px; min-height:0; }
+    .historia{ gap:24px; }
+    .historia h2,
+    .missao-conteudo h2,
+    .processo h2,
+    .cabecalho-animais h2,
+    .titulo-secao-catalogo h2{ font-size:26px; }
+    .historia p{ font-size:17px; }
+    .missao-conteudo{ gap:28px; }
+    .missao-conteudo p{ font-size:16px; }
+    .pontos-missao{ margin-top:20px; gap:12px; }
+    .etapas{ margin-top:32px; gap:16px; }
+    .etapa{ padding:20px; }
+    .parcerias-destaque{ padding:48px 0; }
+    .parcerias-destaque h2{ font-size:26px; }
+    .cartao-animal{ border-radius:18px 18px 8px 18px; }
 
 img{ max-width:100%; }
 
