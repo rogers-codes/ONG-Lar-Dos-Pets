@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doação financeira — Lar dos Pets</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/doacao.css">
+  <link rel="shortcut icon" href="logo/logo_lardospets.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="navegacao-interna">
+      <a href="index.html" class="logotipo">
+        <span class="icone-logotipo"><img src="logo/logo_lardospets.ico" alt="Logo da ONG Lar dos Pets" width="80" height="53"></span>
+        Lar dos Pets
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html#missao">Sobre</a></li>
+          <li><a href="index.html#processo">Como funciona</a></li>
+          <li><a href="LarDosPets/front/catalogo.html">Animais</a></li>
+          <li><a href="index.html#parcerias">Parcerias</a></li>
+        </ul>
+      </nav>
+      <div class="acoes-cabecalho">
+        <a href="index.html#ajudar" class="botao botao-contorno">Voltar</a>
+        <a href="LarDosPets/front/catalogo.html" class="botao botao-principal">Quero adotar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pagina-doacao">
+      <div class="container">
+        <div class="cabecalho-doacao">
+          <span class="etiqueta-secao">Doe e transforme vidas</span>
+          <h1>Ajude a Lar dos Pets</h1>
+          <p>Sua doação ajuda a manter o resgate, a alimentação e os cuidados veterinários dos cães e gatos acolhidos pela ONG.</p>
+        </div>
+
+        <div class="cartao-doacao">
+          <div class="conteudo-doacao">
+            <h2>Faça sua doação via Pix</h2>
+            <p>Aponte a câmera do celular para o QR Code ou copie a chave Pix abaixo.</p>
+            <div class="qr-code-doacao">
+              <img src="imgs/qrcode_pix.png" alt="QR Code para doação via Pix">
+            </div>
+            <div class="chave-pix">
+              <span>Chave Pix (CNPJ)</span>
+              <code id="chave-pix">46.247.908/0001-03</code>
+              <button type="button" class="botao botao-contorno botao-copiar" id="botao-copiar-pix">Copiar chave Pix</button>
+              <span class="mensagem-copia" id="mensagem-copia" role="status" aria-live="polite"></span>
+            </div>
+            <p class="agradecimento">Obrigado por fazer parte dessa transformação!</p>
+            <a href="index.html" class="botao botao-contorno">Voltar para o início</a>
+          </div>
+          <img class="imagem-doacao" src="imgs/arrecadacoes/cachorro-060.jpg" alt="Cachorro sendo cuidado pela equipe da Lar dos Pets">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container rodape-inferior">
+      <span>© 2026 Lar dos Pets. Todos os direitos reservados.</span>
+      <span>CNPJ 46.247.908/0001-03</span>
+    </div>
+  </footer>
+  <script src="js/doacao.js"></script>
+</body>
+</html>
