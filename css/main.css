@@ -454,9 +454,11 @@
   .imagem-catalogo-cachorro_zeca img{ object-position: center 75%; }
   .imagem-catalogo-cachorro_chiquinho img{ object-position: center 65%; }
   .imagem-catalogo-cachorro_billy img{ object-position: 25% 100%; }
-  .foto-animal-caramelo img{ object-position: center 20%; }
+  .foto-animal-caramelo img{ object-position: center 70%; }
+  .foto-animal-fiel img{ object-position: center 82%; }
   .foto-animal-gato img{ object-position: center center; }
-  .foto-animal-preto-branco img{ object-position: center 70%; }
+  .foto-animal-fumaca img{ object-position: center 45%; }
+  .foto-animal-preto-branco img{ object-position: center 20%; }
   .info-animal{ padding: 22px 24px 26px; }
   .info-animal h3{ font-size: 19px; }
   .info-animal .metadados{
