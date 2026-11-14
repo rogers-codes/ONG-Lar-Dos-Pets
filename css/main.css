@@ -906,3 +906,80 @@ img{ max-width:100%; }
 
    
   }
+
+/* CUIDADOS E INCLUSÃO */
+
+.secao-cuidados {
+  padding: 80px 0;
+  background: #f2f4ff;
+}
+
+.cuidados-cabecalho {
+  max-width: 750px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.cuidados-cabecalho h2 {
+  font-size: 2.2rem;
+  color: #2e3559;
+  margin: 15px 0;
+}
+
+.cuidados-cabecalho p {
+  color: #555f85;
+  line-height: 1.7;
+}
+
+.cuidados-grade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.cuidados-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cuidados-card h3 {
+  color: #444d82;
+  margin-bottom: 12px;
+}
+
+.cuidados-card p {
+  color: #555f85;
+  line-height: 1.7;
+}
+
+.cuidados-destaque {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #dce1fa;
+  border-radius: 20px;
+}
+
+.cuidados-destaque h3 {
+  color: #2e3559;
+  margin-bottom: 15px;
+}
+
+.cuidados-destaque p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .cuidados-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .cuidados-cabecalho h2 {
+    font-size: 1.7rem;
+  }
+}
