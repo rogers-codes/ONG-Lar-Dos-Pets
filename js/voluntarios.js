@@ -18,14 +18,14 @@ formulario.addEventListener("submit", (evento) => {
   }
 
   const mensagem = [
-    "Olá! Gostaria de me tornar um voluntário na Lar dos Pets.",
+    "Olá! Gostaria de me tornar voluntário na ONG Lar dos Pets.",
     "",
     `Nome: ${dados.get("nome")}`,
     `E-mail: ${dados.get("email")}`,
     `Telefone: ${dados.get("telefone")}`,
     `Cidade: ${dados.get("cidade")}`,
     `Disponibilidade: ${disponibilidadeFormatada}`,
-    `Como desejo ajudar: ${dados.get("mensagem")}`
+    `Como posso ajudar: ${dados.get("mensagem")}`
   ].join("\n");
 
   const linkWhatsApp =
@@ -33,5 +33,5 @@ formulario.addEventListener("submit", (evento) => {
 
   window.open(linkWhatsApp, "_blank", "noopener,noreferrer");
   mensagemRetorno.textContent =
-    "Revise os dados e clique em enviar no WhatsApp.";
+    "Confira os dados e envie a mensagem pelo WhatsApp.";
 });
