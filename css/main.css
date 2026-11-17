@@ -842,17 +842,86 @@
   @media (max-width: 560px){
     section{ padding: 48px 0; }
     .container{ padding: 0 16px; }
-    .navegacao-interna{ padding: 8px 16px 12px; gap: 8px 10px; }
-    .logotipo{ font-size:17px; gap:6px; }
-    .icone-logotipo{ width:40px; height:40px; margin:0; }
+    .missao-conteudo{
+      grid-template-columns:minmax(0, .88fr) minmax(0, 1.12fr);
+      gap:12px;
+      align-items:start;
+    }
+    .missao-conteudo > div:last-child{
+      display:contents;
+    }
+    .missao-conteudo > div:first-child{
+      grid-column:1;
+      grid-row:1 / span 2;
+    }
+    .missao-conteudo > div:first-child img{
+      width:100%;
+      height:clamp(150px, 42vw, 190px);
+      object-fit:cover;
+    }
+    .missao-conteudo h2{
+      grid-column:2;
+      grid-row:1;
+      font-size:clamp(22px, 6vw, 26px);
+    }
+    .missao-conteudo p{
+      grid-column:2;
+      grid-row:2;
+      font-size:14px;
+      margin-top:8px;
+    }
+    .missao-conteudo .pontos-missao{
+      grid-column:1 / -1;
+      grid-row:3;
+    }
+    .grade-destaque{
+      grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+      gap:12px;
+      align-items:start;
+    }
+    .grade-destaque > div:first-child{
+      display:contents;
+    }
+    .grade-destaque h1{
+      grid-column:1;
+      grid-row:1;
+    }
+    .grade-destaque p.introducao{
+      grid-column:1;
+      grid-row:2;
+    }
+    .grade-destaque .arte-destaque{
+      grid-column:2;
+      grid-row:1 / span 2;
+    }
+    .grade-destaque .acoes-destaque,
+    .grade-destaque .estatisticas-destaque{
+      grid-column:1 / -1;
+    }
+    .navegacao-interna{ padding: 6px 12px; gap: 6px 8px; }
+    .logotipo{ font-size:16px; gap:6px; padding-top:0; }
+    .icone-logotipo{ width:36px; height:36px; margin:0; }
     .acoes-cabecalho{
       order:2;
       width:100%;
       margin-left:0;
-      gap:8px;
+      gap:6px;
     }
     .acoes-cabecalho .botao{ flex:1; }
-    .acoes-cabecalho .botao{ padding:9px 12px; font-size:13px; }
+    .acoes-cabecalho .botao{ min-height:38px; padding:6px 10px; font-size:13px; }
+    nav ul{
+      width:100%;
+      flex-wrap:nowrap;
+      justify-content:space-between;
+      gap:6px;
+    }
+    nav a{
+      display:block;
+      padding:4px 2px;
+      font-size:12.5px;
+      white-space:nowrap;
+    }
+    .lista_cabecalho{ margin:0; }
     .grade-animais, .grade-catalogo{ grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; }
     .grade-rodape{ grid-template-columns:1fr; }
     .cartao-parceiro{ grid-template-columns:1fr; gap: 24px; }
@@ -883,13 +952,13 @@
     .estatisticas-destaque{ gap:16px; }
     .estatisticas-destaque div{ flex:1 1 90px; }
     .destaque{ padding:48px 0; }
-    .destaque h1{ font-size:clamp(32px, 9vw, 40px); }
-    .destaque p.introducao{ font-size:16px; margin-top:16px; }
+    .destaque h1{ font-size:clamp(24px, 7vw, 32px); }
+    .destaque p.introducao{ font-size:14px; margin-top:12px; }
     .acoes-destaque{ margin-top:24px; gap:10px; }
     .estatisticas-destaque{ margin-top:32px; padding-top:20px; }
     .estatisticas-destaque div strong{ font-size:21px; }
     .estatisticas-destaque div span{ font-size:12px; }
-    .arte-destaque{ height:220px; min-height:0; }
+    .arte-destaque{ height:clamp(150px, 42vw, 190px); min-height:0; }
     .historia{ gap:24px; }
     .historia h2,
     .missao-conteudo h2,
