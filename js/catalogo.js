@@ -1,10 +1,15 @@
 const gatos = [
-  "gatos_ferrugem/gato-ferrugem1.jpg", "gatos_ferrugem/gato-ferrugem2.jpg",
-  "gatos_ferrugem/gato-ferrugem3.jpg", "gatos_ferrugem/gato-ferrugem4.jpg",
+  "gatos_buxinha/gato-buxinha1.jpg", "gatos_buxinha/gato-buxinha2.jpg", 
+  "gatos_costurada/gato-costurada.jpg", "gatos_costurada/gato-costurada.jpg",
   "gatos_fumaca/gato-fumaca1.jpg", "gatos_fumaca/gato-fumaca2.jpg",
   "gatos_mingau/gato-mingau1.jpg", "gatos_mingau/gato-mingau2.jpg",
   "gatos_nina/gato-nina1.jpg", "gatos_nina/gato-nina2.jpg",
-  "gatos_pipoca/gato-pipoca1.jpg", "gatos_pipoca/gato-pipoca2.jpg"
+  "gatos_pintado/gato-pintado1.jpg", "gatos_pintado/gato-pintado2.jpg",
+  "gatos_pintado/gato-pintado3.jpg", "gatos_pintado/gato-pintado4.jpg",
+  "gatos_pipoca/gato-pipoca1.jpg", "gatos_pipoca/gato-pipoca2.jpg",
+  "gatos_samanta/gato-samanta.jpg",
+  "gatos_sararacura/gato-sararacura.jpg" ,
+  "gatos_tigrinha/gato-tigrinha.jpg" , 
 ];
 
 const cachorros = [
@@ -15,8 +20,8 @@ const cachorros = [
   "cachorro_branquinhoedonatella/cachorro-branquinhoedonatella1.jpg", "cachorro_branquinhoedonatella/cachorro-branquinhoedonatella2.jpg",
   "cachorro_branquinhoedonatella/cachorro-branquinhoedonatella3.jpg", "cachorro_branquinhoedonatella/cachorro-branquinhoedonatella4.jpg",
   "cachorro_cambitinho/cachorro-cambitinho.jpg",
-  "cachorro_chiquinho/cachorro-chiquinho1.jpg", "cachorro_chiquinho/cachorro-chiquinho2.jpg",
-  "cachorro_chiquinho/cachorro-chiquinho3.jpg", "cachorro_chiquinho/cachorro-chiquinho4.jpg", "cachorro_chiquinho/cachorro-chiquinho5.jpg",
+  "cachorro_boquinha/cachorro-boquinha1.jpg", "cachorro_boquinha/cachorro-boquinha2.jpg",
+  "cachorro_boquinha/cachorro-boquinha3.jpg", "cachorro_boquinha/cachorro-boquinha4.jpg", "cachorro_boquinha/cachorro-boquinha5.jpg",
   "cachorro_cristal/cachorro-cristal.jpg",
   "cachorro_fiel/cachorro-fiel.jpg",
   "cachorro_frajola/cachorro-frajola3.jpg", "cachorro_frajola/cachorro-frajola2.jpg",
@@ -36,12 +41,13 @@ const cachorros = [
 const nomes = {
   "Cachorro 01": "Apollo", "Cachorro 02": "Billy", "Cachorro 03": "Bolota",
   "Cachorro 04": "Branquinho e Donatella", "Cachorro 05": "Cambitinho",
-  "Cachorro 06": "Chiquinho", "Cachorro 07": "Cristal", "Cachorro 08": "Fiel",
+  "Cachorro 06": "Boquinha", "Cachorro 07": "Cristal", "Cachorro 08": "Fiel",
   "Cachorro 09": "Frajola", "Cachorro 10": "Hanna", "Cachorro 11": "Luna",
   "Cachorro 12": "Negão", "Cachorro 13": "Perdigueiro", "Cachorro 14": "Rex",
   "Cachorro 15": "Romeu e Estopa", "Cachorro 16": "Zeca",
-  "Gato 01": "Ferrugem", "Gato 02": "Fumaça", "Gato 03": "Mingau",
-  "Gato 04": "Nina", "Gato 05": "Pipoca"
+  "Gato 01": "Buxinha", "Gato 02": "Costurada", "Gato 03": "Fumaça",
+  "Gato 04": "Mingau", "Gato 05": "Nina", "Gato 06": "Pintado", "Gato 07": "Pipoca",
+  "Gato 08": "Samanta", "Gato 09": "Sararacura", "Gato 10": "Tigrinha",
 };
 
 const grupos = (arquivos) => Object.values(arquivos.reduce((resultado, arquivo) => {
