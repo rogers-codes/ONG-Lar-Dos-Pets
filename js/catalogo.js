@@ -1,6 +1,6 @@
 const gatos = [
   "gatos_buxinha/gato-buxinha1.jpg", "gatos_buxinha/gato-buxinha2.jpg", 
-  "gatos_costurada/gato-costurada.jpg", "gatos_costurada/gato-costurada.jpg",
+  "gatos_costurada/gato-costurada.jpg", 
   "gatos_fumaca/gato-fumaca1.jpg", "gatos_fumaca/gato-fumaca2.jpg",
   "gatos_mingau/gato-mingau1.jpg", "gatos_mingau/gato-mingau2.jpg",
   "gatos_nina/gato-nina1.jpg", "gatos_nina/gato-nina2.jpg",
